@@ -1,0 +1,17 @@
+while True:
+    try:
+        # Get the user's score
+        score = int(input("Enter your score (1-100): "))
+        
+        # Check if the score is within the valid range
+        if score < 1 or score > 100:
+            print("Invalid mark")
+        # Check if the score is a passing grade
+        elif score >= 61:
+            print("Pass")
+        # If the score is 60 or below, it is a failing grade
+        else:
+            print("Fail")
+    
+    except ValueError:
+        print("Invalid input. Please enter a number between 1 and 100.")
